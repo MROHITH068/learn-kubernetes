@@ -6,3 +6,20 @@ spec:
   containers:
     - name: nginx
       image: nginx
+
+---
+
+#Annotations $ Labels
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod02
+  annotations:
+    training/class: devops
+  labels:
+    type: test
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+---
